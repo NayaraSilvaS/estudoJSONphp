@@ -14,6 +14,10 @@ $divisao = 5 / 2;
     <meta charset="UTF-8">
 </head>
     <body>
+    <?php
+        echo date("d/m/Y");
+        ?>
+    <hr>
         <select id="slProfessores" name="slProfessores">
         <?php
         for ($i = 0; $i < count($arrayNome); $i++) {
@@ -58,6 +62,22 @@ $divisao = 5 / 2;
         }
         $cont ++;
     }
+    ?>
+    <hr>
+    <?php
+    $arrFrutas = [
+        1 => "Abacate",
+        2 => "Banana",
+        3 => "Morango",
+        4 => "Manga",
+        5 => "Uva"
+        ];
+
+        foreach ($arrFrutas as $v) {
+            ?>
+            <li><?= $v ?></li>
+            <?php
+        }
     ?>
     <hr>
         <ul>
